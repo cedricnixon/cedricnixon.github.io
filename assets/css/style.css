@@ -2,6 +2,30 @@ body {
     margin: 0;
 }
 
+/*Navbar*/
+#nav {
+    position: fixed;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    z-index: 1000;
+    left:50%;
+    transform: translateX(-50%);
+    width: 100%;
+    text-align: center;
+    background: rgba(0, 0, 0, 0.3);
+}
+
+#nav li {
+    display: inline-block;
+    margin: 0 130px;
+    color: WHITE;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 20px;
+    padding: 10px 20px;
+}
+
+/*Cover Image*/
 #cover {
     overflow: hidden;
     width: 100%;
@@ -10,10 +34,10 @@ body {
     position: relative;
 }
 
-#coverBack {
+.coverBack {
     position: absolute;
     background-color: #082a60;
-    opacity: 0.6;
+    opacity: 0.45;
     width: 100%;
     height: 100%;
 }
@@ -50,4 +74,72 @@ body {
 
 #titleDescr {
     font-size: 30px;
+}
+
+/*About*/
+#about {
+    height: 100vh;
+    background: #1153bf;
+    position: relative;
+    font-family: 'Open Sans', sans-serif;
+    margin: 0;
+}
+
+#descr {
+    font-size: 30px;
+    width: 50%;
+    padding-top: 50px;
+    margin-left: 100px;
+    color: WHITE;
+}
+
+#greeting {
+    font-size: 60px;
+    font-weight: 900;
+}
+
+#social {
+    position: absolute;
+    right: 100px;
+    top: 50px;
+    font-size: 40px;
+    font-weight: 900;
+    padding: 20px;
+    color: white;
+}
+
+#social div {
+    padding: 10px 20px;
+    text-align: center;
+}
+
+#github {
+    background: RED;
+}
+
+#linkedIn {
+    background: ORANGE;
+    margin-top: 20px;
+}
+
+#img-gall {
+    position: absolute;
+    bottom: 0;
+    font-size: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.skillImg {
+    display: inline-block;
+    overflow: hidden;
+    width: 32.944vw;
+    height: 32.944vw;
+    margin: 0;
+}
+
+.skillImg img {
+    object-fit: cover;
+    height: 100%;
+    width: 100%;
 }
