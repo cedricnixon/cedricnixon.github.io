@@ -3,17 +3,21 @@
         <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel="stylesheet">
         <link href="assets/css/style.css" rel="stylesheet">
+        <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js">
+        </script>
+        <script src = "assets/js/script.js"></script>
     </head>
     <body>
         <ul id="nav">
-            <li>About</li>
-            <li>Projects</li>
-            <li>Contact Me</li>
+            <li id="home">Home</li>
+            <li id="aboutMe">About</li>
+            <li id="contactMe">Contact Me</li>
         </ul>
         <div id="cover">
-            <div class="coverBack">
+            <div id="goldengate" class="coverBack">
             </div>
-            <img src="assets/img/golden_gate.jpg">
+            <img src="assets/img/golden_gate3.jpeg">
+
             <div id="name">
                 <div id="circle">
                     <img src="assets/img/Cedric.jpg">
@@ -26,29 +30,76 @@
         </div>
         <div id="about">
             <div id="descr">
-                <div id="greeting">
+                <div class="greeting">
                     Hi There!
                 </div>
-                I'm a student studying economics and computer science  at UC Berkeley. I'm fond of food, travel, finance, and technology.
+                I'm a student studying economics and computer science at UC Berkeley. I'm fond of food, travel, finance, and technology. <br>
+                Hover over to learn more:
             </div>
             <div id = "social">
-                <div id="github">
+                <a href="https://github.com/cedricnixon" class="box" id="github">
                     GitHub
-                </div>
-                <div id="linkedIn">
+                </a>
+                <a href="https://www.linkedin.com/in/cedric-nixon-b32370a7" class="box" id="linkedIn">
                     LinkedIn
-                </div>
+                </a>
             </div>
             <div id="img-gall">
                 <div class="skillImg">
+                    <div class="skill-cont">
+                        <div class="coverBack">
+                        </div>
+                        <div class="skills">
+                            Proficient in:
+                            <ul>
+                                <li>HTML5</li>
+                                <li>JavaScript</li>
+                                <li>CSS3</li>
+                                <li>Java</li>
+                                <li>Python</li>
+                            </ul>
+                        </div>
+                    </div>
                     <img src="assets/img/chip.jpg">
                 </div>
-                <div class="skillImg">
+                <div id="bull" class="skillImg">
+                    <div class="skill-cont">
+                        <div class="coverBack">
+                        </div>
+                        <div class="skills">
+                            Experience with finance internships and case studies.
+                        </div>
+                    </div>
                     <img src="assets/img/bull.jpg">
                 </div>
                 <div class="skillImg">
+                    <div class="skill-cont">
+                        <div class="coverBack">
+                        </div>
+                        <div class="skills">
+                            Sophomore graduating <br>
+                            May 2019
+                        </div>
+                    </div>
                     <img src="assets/img/berkeley.jpg">
                 </div>
+            </div>
+        </div>
+        <div id="contact">
+            <div id="container">
+                <div class="greeting">
+                    Contact Me Here!
+                </div>
+                <form action="https://formspree.io/cednix@gmail.com" method="POST">
+                    <input id="text" class="entry" placeholder="Your message." type="text" name="name">
+                    <input class="entry" type="email" placeholder="Your email address." name="_replyto">
+                    <input id="button" class="entry" type="submit" value="Send">
+                </form>
+            </div>
+        </div>
+        <div id="footer">
+            <div id="sig">
+                © Cedric Nixon 2016
             </div>
         </div>
     </body>
